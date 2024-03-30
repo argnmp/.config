@@ -37,20 +37,20 @@ cmp.setup({
     {name = 'buffer', keyword_length = 3},
     {name = 'luasnip', keyword_length = 2},
   },
-  formatting = {
+  --[[ formatting = {
     fields = {'menu', 'abbr', 'kind'},
     format = function(entry, item)
       local menu_icon = {
         nvim_lsp = 'λ',
         luasnip = '⋗',
         buffer = 'Ω',
-        path = '🖫',
+        path = '',
       }
 
       item.menu = menu_icon[entry.source.name]
       return item
     end,
-  },
+  }, ]]
   mapping = {
     ['<Up>'] = cmp.mapping.select_prev_item(select_opts),
     ['<Down>'] = cmp.mapping.select_next_item(select_opts),

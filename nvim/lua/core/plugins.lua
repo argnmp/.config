@@ -18,6 +18,7 @@ require("lazy").setup({
   { "catppuccin/nvim", as = "catppuccin" },
   "rebelot/kanagawa.nvim",
   'sainnhe/everforest',
+  'ful1e5/onedark.nvim',
 
   'nvim-tree/nvim-tree.lua',
   'nvim-tree/nvim-web-devicons',
@@ -51,4 +52,5 @@ require("lazy").setup({
   "lukas-reineke/indent-blankline.nvim",
   "windwp/nvim-autopairs",
   {'akinsho/toggleterm.nvim', version = "*", config = true},
+  "ggandor/leap.nvim"
 })

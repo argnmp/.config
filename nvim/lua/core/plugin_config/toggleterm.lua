@@ -1,4 +1,4 @@
 require("toggleterm").setup {
 }
-vim.keymap.set('n', '<leader>t', ':ToggleTerm<CR>')
-vim.keymap.set('n', '<leader>s', ':ToggleTerm<CR> ./vimrun.sh <CR>')
+vim.keymap.set('n', '<leader>t', ':ToggleTerm direction=float <CR>')
+vim.keymap.set('n', '<leader>s', ':ToggleTerm size=20 <CR> ./vimrun.sh <CR>')
